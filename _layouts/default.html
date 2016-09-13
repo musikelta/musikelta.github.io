@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="musikelta">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <title>Musikelta</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=IM+Fell+Double+Pica' rel='stylesheet' type='text/css'>
+    <link href='/css/musikelta.min.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="background-container" style="position:fixed;z-index:-1;"></div>
+    <div class="container menu">
+      <div class="row">
+        <div class="twelve columns">
+          <a ui-sref-active="active" class="button" ui-sref="home">Home</a>
+          <a ui-sref-active="active" class="button" ui-sref="about">About</a>
+          <a ui-sref-active="active" class="button" ui-sref="blog">Blog</a>
+          <a ui-sref-active="active" class="button" ui-sref="events">Events</a>
+          <a ui-sref-active="active" class="button" ui-sref="videos">Videos</a>
+        </div>
+      </div>
+      <ui-view></ui-view>
+    </div>
+    <div class="footer">
+      <a ui-sref-active="active" class="button" ui-sref="impressum">Impressum</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.5.8/angular-touch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/background.js"></script>
+  </body>
+</html>

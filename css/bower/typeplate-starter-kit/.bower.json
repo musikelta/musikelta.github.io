@@ -1,0 +1,17 @@
+{
+  "name": "typeplate-starter-kit",
+  "version": "3.0.1",
+  "homepage": "http://typeplate.com",
+  "description": "A Typographic Starter Kit",
+  "main": "scss/_typeplate.scss, css/typeplate.css",
+  "_release": "3.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.1",
+    "commit": "1f45d7b1ea8e790cf491feaf8115406d80957106"
+  },
+  "_source": "https://github.com/typeplate/starter-kit.git",
+  "_target": "^3.0.1",
+  "_originalSource": "typeplate-starter-kit",
+  "_direct": true
+}

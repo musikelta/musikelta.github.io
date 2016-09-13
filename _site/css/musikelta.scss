@@ -1,0 +1,129 @@
+@import "bower/typeplate-starter-kit/scss/typeplate-index";
+@import "bower/Skeleton-Sass/scss/skeleton.scss";
+
+$background: rgba(25, 25, 25, 0.7);
+$font-color: #FDFDFD;
+
+html,body {
+    height:100%;
+    font-family: 'IM Fell Double Pica', serif;
+
+}
+body{
+  overflow-y: scroll;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin flexbox(){
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.inline-image{
+  float:left;
+  width:25%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  opacity: 0.8;
+}
+
+.panel{
+  min-height: 100%;
+  padding: 5px;
+  color: $font-color;
+  h3{
+    color: $font-color;
+  }
+  .content{
+    padding: 1.5vw;
+    @include border-radius(3px);
+    background-color: $background;
+  }
+}
+
+h3{
+  font-family: 'IM Fell Double Pica', serif;
+}
+
+.event{
+  h3, .date, .address{
+    text-align: center;
+  }
+}
+.ui-view-container {
+  position: relative;
+  height: 65px;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+}
+
+.button{
+  background-color: none;
+  color: $font-color;
+  border: 0;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 0;
+  &:hover{
+    color: darken($font-color, 30%);
+  }
+}
+
+.button.active{
+  color: $font-color;
+  border-bottom: 1px solid $font-color;
+}
+
+.menu{
+  padding-top: 10vh;
+}
+
+.musikelta{
+  font-family: 'IM Fell Double Pica', serif;
+  font-size: 15vh;
+  text-shadow: 0px 0px 30px rgba(255, 255, 255, 1);
+  color: #fff;
+  margin:auto;
+  margin-top: 25vh;
+  display:table;
+}
+
+.footer {
+  color: #fdfdfd;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+}

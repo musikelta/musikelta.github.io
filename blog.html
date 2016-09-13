@@ -1,0 +1,12 @@
+---
+layout: page
+---
+{% if site.categories.blog == null %}
+  Es gibt noch keine Blogeinträge.
+{% endif %}
+{% for post in site.categories.blog %}
+    <h3>{{ post.title | escape }}</h3>
+    <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+    {{ post.excerpt }}
+    <a href="#/blog{{post.url}}">Read More</a>
+{% endfor %}
