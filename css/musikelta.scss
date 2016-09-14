@@ -47,6 +47,7 @@ body{
     padding: 1.5vw;
     @include border-radius(3px);
     background-color: $background;
+    padding-bottom: 60px;
   }
 }
 
@@ -122,8 +123,58 @@ h3{
 }
 
 .footer {
+  width: 100%;
+  min-width: 100%;
   color: #fdfdfd;
   position: fixed;
   bottom: 0;
-  right: 5px;
+  background-color: #000;
+  height: 60px;
+  display: table-cell;
+}
+
+.impressum{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* PLAYER */
+.player{
+  display:table;
+  width:100%;
+  .controls-row{
+    display: table-row;
+  }
+  .control{
+    padding: 4px;
+    display:table-cell;
+    text-align: center;
+    cursor: pointer;
+    .content{
+      min-width: 100%;
+      width: 100%;
+      white-space: nowrap;
+    }
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #fdfdfd;
+      &:hover{
+        color: darken($font-color, 30%);
+      }
+    }
+    &:hover{
+      color: darken($font-color, 30%);
+    }
+    img{
+      vertical-align: middle;
+      display: inline;
+    }
+  }
+}
+.impressum{
+  position: fixed;
+  top: 0;
+  right: 0;
 }

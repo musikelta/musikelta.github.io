@@ -1,6 +1,9 @@
 (function(){
-  var app = angular.module("musikelta", ['ngAnimate', 'ui.router']);
-
+  var app = angular.module("musikelta", ['ngAnimate', 'ui.router'],function($interpolateProvider) {
+    $interpolateProvider.startSymbol('[[');
+    $interpolateProvider.endSymbol(']]');
+  });
+  app.directive("player", Player);
   app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise("/");
   $stateProvider

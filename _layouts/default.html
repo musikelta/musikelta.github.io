@@ -10,6 +10,7 @@
     <title>Musikelta</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=IM+Fell+Double+Pica' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     <link href='/css/musikelta.min.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
@@ -27,14 +28,29 @@
       <ui-view></ui-view>
     </div>
     <div class="footer">
-      <a ui-sref-active="active" class="button" ui-sref="impressum">Impressum</a>
+      <div class="container">
+        <div class="row">
+          <div class="three columns">
+            &nbsp;
+          </div>
+          <div class="six columns">
+            <player></player>
+          </div>
+          <div class="three columns">
+
+          </div>
+        </div>
+      </div>
     </div>
+    <a ui-sref-active="active" class="button impressum" ui-sref="impressum">Impressum</a>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.5.8/angular-touch.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    <script src="/js/player.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/background.js"></script>
   </body>

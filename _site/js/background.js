@@ -189,7 +189,6 @@ var FaeryBackground = function(){
 			startTime = timestamp;
 		}
     var delta = timestamp - startTime;
-    console.log(delta);
     if(delta > 100){
       delta = 100;
     }
