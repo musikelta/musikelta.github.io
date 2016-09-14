@@ -1,0 +1,13 @@
+<div class="player">
+  <div class="controls-row">
+    <i class="control" ng-class="{'fa fa-play-circle':!isPlaying, 'fa fa-pause-circle':isPlaying}" ng-click="toggle()" aria-hidden="true"></i>
+    <i class="control fa fa-step-backward" ng-click="backward()" aria-hidden="true"></i>
+    <div class="control content">
+      <a ng-href="[[track.permalink_url]]">
+        <span>[[track.user.username]] - [[track.title]]</span>
+      </a>
+    </div>
+    <i class="control fa fa-step-forward" ng-click="forward()" aria-hidden="true"></i>
+    <a class="control" href="http://soundcloud.com/musikelta/"><img src="/img/soundcloud.png"></a>
+  </div>
+</div>
