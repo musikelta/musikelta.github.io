@@ -22,7 +22,7 @@ function Player($http, $timeout) {
       SC.initialize({
         client_id: '8ceba3a1ed41b04787f560e70efa7c2f',
       });
-      SC.resolve("http://soundcloud.com/musikelta/tracks").then(function(tracks){
+      SC.resolve("https://soundcloud.com/musikelta/sets/from-dusk-till-dawn").then(function(tracks){
         $timeout(function(){
           $scope.initPlayer(tracks);
         });
